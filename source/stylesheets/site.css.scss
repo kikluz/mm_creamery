@@ -1,0 +1,170 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-sarif;
+}
+// --------------------------------------------------
+// Basics of html
+// --------------------------------------------------
+a {
+  color: rgba(#000, 0.7);
+  text-decoration: none;
+  &:focus,
+  &:hover {
+    color: rgba(#000, 0.6);
+  }
+}
+p {
+  font-size: 1.25rem;
+  font-family: 'Asap', sans-serif;
+}
+//-------------------------------------------------------------
+// Navigation Styles
+//-------------------------------------------------------------
+.site_nav {
+  display: inline-block;
+}
+.social_nav {
+  display: inline;
+  float: right;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  padding-top: 15px;
+  a {
+    margin-right: 5px;
+  }
+}
+// --------------------------------------------------
+// Hero positioning and sizing   
+// --------------------------------------------------
+/*vw and vh stand for the percentage of the viewport width and height.*/
+.hero {
+  // Sizing
+  width: 100vw;
+  height: 90vh;
+
+  // Flexbox stuff
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+   // Text styles 
+    text-align: center;
+    color: white; /* ADD THIS LINE */
+
+  // Background style
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/creamerie_mm.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  h1 {
+    // Text styles
+    font-size: 5em;
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+  p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: 'Asap', sans-serif;
+  }
+  .btn {
+    // Positioning and sizing
+    display: block;
+    width: 200px;
+
+    // padding and marging
+    padding: 1em;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+
+    // Text styles
+    color: white; /* CHANGE THIS LINE */
+    text-decoration: none;
+    font-size: 1.5em;
+
+    // Border styles
+    border: 3px solid white;
+    border-radius: 8px;
+  }
+}
+
+#container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+//-------------------------------------------------------------
+// Section info panel
+//-------------------------------------------------------------
+.info_panel {
+  padding: 100px;
+}
+//-------------------------------------------------------------
+// Section three colmns
+//-------------------------------------------------------------
+.border_top {
+  border-bottom: 1.5px solid #d089af;
+  width: 25rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+// This is to clear elements from the three columns
+.section_columns {
+  text-align: center;
+}
+.section_columns:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col1, .col2, .col3 {
+  float: left;
+  width: 33.33%;
+
+  .btn_section  {
+    padding: 8px;
+    font-size: 1.2em;
+    list-style: none;
+    margin-top: 8px;
+    white-space: nowrap;
+    border: 1px solid #6ab48d;
+    border-radius: 1px;
+  }
+   .p-button:active,  .p-button:focus,  .p-button:visited {
+    color: #6ab48d;
+    background: #fff;
+    box-shadow: none;
+    outline: none;
+}
+  .btn_section:hover {
+    color: #e20000;
+  }
+}
+//-------------------------------------------------------------
+// Footer Styles
+//-------------------------------------------------------------
+
+footer {
+  background-color: #6ab48d; 
+  padding: 20px;
+  p {
+    font-size: 10px;
+  }
+.social_footer, .footer_contact, .footer_location {
+  display: inline-block;
+  padding: 20px;
+}
+}
+.footer_info {
+  padding: 20px;
+  text-align: center;
+}
+
+
+
