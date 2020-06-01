@@ -5,6 +5,7 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+activate :livereload
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -13,6 +14,9 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+
+
+# activate :sprockets
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
@@ -26,7 +30,30 @@ page '/*.txt', layout: false
 #     which_fake_page: 'Rendering a fake page with a local variable'
 #   },
 # )
+# Deploy to github pages
+# activate :deploy do |deploy|
+#   deploy.deploy_method = :git
+#   deploy.build_before = true # default: false
+# end
+import_path File.expand_path('bower_components', app.root)
+# extensions
+# require 'lib/extensions/permalink.rb'
+# activate :permalink
+activate :syntax
+set :markdown_engine, :kramdown
 
+configure :build do
+	set :relative_links, true
+	activate :minify_css
+	activate :minify_javascript
+	activate :asset_hash
+	
+	
+	# Relative assets needed to deploy to Github Pages
+	activate :relative_assets
+	# Name of the project where you working on
+	set :site_url, "/middletown_creamery"
+end
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
