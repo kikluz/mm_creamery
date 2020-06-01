@@ -30,11 +30,11 @@ page '/*.txt', layout: false
 #     which_fake_page: 'Rendering a fake page with a local variable'
 #   },
 # )
-# Deploy to github pages
-# activate :deploy do |deploy|
-#   deploy.deploy_method = :git
-#   deploy.build_before = true # default: false
-# end
+Deploy to github pages
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.build_before = true # default: false
+end
 import_path File.expand_path('bower_components', app.root)
 # extensions
 # require 'lib/extensions/permalink.rb'
