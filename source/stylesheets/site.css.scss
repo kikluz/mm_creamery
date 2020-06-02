@@ -102,8 +102,8 @@ and (orientation: landscape) {
 /*vw and vh stand for the percentage of the viewport width and height.*/
 .hero {
   // Sizing
-  width: 100vw;
-  height: 90vh;
+  width: 99vw;
+  height: 100vh;
 
   // Flexbox stuff
   display: flex;
@@ -219,10 +219,11 @@ footer {
   p {
     font-size: 10px;
   }
-.social_footer, .footer_contact, .footer_location {
-  display: inline-block;
-  padding: 20px;
-}
+  a {margin-right: 0.5em;}
+  .social_footer, .footer_contact, .footer_location {
+    display: inline-block;
+    padding: 20px;
+  }
 }
 .footer_info {
   padding: 20px;
