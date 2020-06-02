@@ -7,7 +7,8 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Middleman" %></title>
-    <script src="https://use.fontawesome.com/4c2f0c35ec.js"></script>
+    <!--load all styles -->
+    <link href="../stylesheets/css/all.css" rel="stylesheet"> 
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
