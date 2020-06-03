@@ -25,63 +25,63 @@ p {
 // Breakpoints
 // --------------------------------------------------
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
- 
+
 /* Portrait */
- 
+
 @media only screen
- 
+
 and (min-device-width: 375px)
- 
+
 and (max-device-width: 667px)
- 
+
 and (-webkit-min-device-pixel-ratio: 2)
- 
+
 and (orientation: portrait) {
- 
+
 }
- 
+
 /* Landscape */
- 
+
 @media only screen
- 
+
 and (min-device-width: 375px)
- 
+
 and (max-device-width: 667px)
- 
+
 and (-webkit-min-device-pixel-ratio: 2)
- 
+
 and (orientation: landscape) {
- 
+
 }
- 
+
 /* ----------- Google Pixel ----------- */
- 
+
 /* Portrait */
- 
+
 @media screen
- 
+
 and (device-width: 360px)
- 
+
 and (device-height: 640px)
- 
+
 and (-webkit-device-pixel-ratio: 3)
- 
+
 and (orientation: portrait) {
- 
+
 }
- 
+
 /* Landscape */
- 
+
 @media screen
- 
+
 and (device-width: 360px)
- 
+
 and (device-height: 640px)
- 
+
 and (-webkit-device-pixel-ratio: 3)
- 
+
 and (orientation: landscape) {
- 
+
 }
 //-------------------------------------------------------------
 // Navigation Styles
@@ -116,9 +116,9 @@ and (orientation: landscape) {
   justify-content: center;
   align-items: center;
 
-   // Text styles 
-    text-align: center;
-    color: white; /* ADD THIS LINE */
+  // Text styles 
+  text-align: center;
+  color: white; /* ADD THIS LINE */
 
   // Background style
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/creamerie_mm.jpeg);
@@ -177,7 +177,7 @@ and (orientation: landscape) {
 // Section three colmns
 //-------------------------------------------------------------
 .border_top {
-  border-bottom: 1.5px solid #d089af;
+  border-bottom: 1.5px solid  #00A6B3;
   width: 25rem;
   display: block;
   margin: 0 auto;
@@ -186,12 +186,15 @@ and (orientation: landscape) {
 // This is to clear elements from the three columns
 .section_columns {
   text-align: center;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 .section_columns:after {
   content: "";
   display: table;
   clear: both;
 }
+.fa-ice-cream {color: #C879B2;}
 .col1, .col2, .col3 {
   float: left;
   width: 33.33%;
@@ -205,12 +208,12 @@ and (orientation: landscape) {
     border: 1px solid #6ab48d;
     border-radius: 1px;
   }
-   .p-button:active,  .p-button:focus,  .p-button:visited {
+  .p-button:active,  .p-button:focus,  .p-button:visited {
     color: #6ab48d;
     background: #fff;
     box-shadow: none;
     outline: none;
-}
+  }
   .btn_section:hover {
     color: #e20000;
   }
@@ -223,6 +226,8 @@ footer {
   text-align: center;
   background-color: #6ab48d; 
   line-height: 1.5;
+  // to show background affected by float: left;
+  overflow: hidden;
   ul {
     list-style: none;
     padding-left: 0;
@@ -234,6 +239,7 @@ footer {
   width: 33.33%;
   margin: 0 auto;
 }
+.fa-facebook-f {color: #4285f4;}
 .social_list {
   li { 
     display: inline;
