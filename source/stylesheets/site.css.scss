@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   padding: 0px;
   margin: 0px;
@@ -231,6 +234,49 @@ footer {
   padding: 20px;
   text-align: center;
 }
+//-------------------------------------------------------------
+// Menu style https://codepen.io/evagabriela/pen/pZqrBj
+//-------------------------------------------------------------
+.manu_info {
+  h1, p {text-align: center;}
+  img {
+    max-width: 200px;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  li {
+    width: 31%;
+    margin: 30px 0;
+  }
+
+  p span {
+    display: inline-block;
+    width: auto;
+    margin: 0 10px;
+  }
+
+  p span:nth-child(1) {
+    color: #00A6B3;
+  }
+
+  p span:nth-child(2) {
+    color: #F15B31;
+  }
+
+  p span:nth-child(3) {
+    color: #C879B2;
+  }
 
 
+  h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+  }
 
+}
