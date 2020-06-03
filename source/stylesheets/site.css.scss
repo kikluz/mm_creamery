@@ -109,6 +109,7 @@ and (orientation: landscape) {
   height: 100vh;
   // he horizontal scroll solved by giving max-width: 100%
   max-width:100%;
+  // flex-direction: column;
 
   // Flexbox stuff
   display: flex;
@@ -219,21 +220,27 @@ and (orientation: landscape) {
 //-------------------------------------------------------------
 
 footer {
-  background-color: #6ab48d; 
-  padding: 20px;
-  p {
-    font-size: 10px;
-  }
-  a {margin-right: 0.5em;}
-  .social_footer, .footer_contact, .footer_location {
-    display: inline-block;
-    padding: 20px;
-  }
-}
-.footer_info {
-  padding: 20px;
   text-align: center;
+  background-color: #6ab48d; 
+  line-height: 1.5;
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
 }
+
+.social_footer, .footer_contact, .footer_location {
+  float: left;
+  width: 33.33%;
+  margin: 0 auto;
+}
+.social_list {
+  li { 
+    display: inline;
+    padding-right: 2em; 
+  }
+}
+
 //-------------------------------------------------------------
 // Menu style https://codepen.io/evagabriela/pen/pZqrBj
 //-------------------------------------------------------------
