@@ -9,21 +9,23 @@
     <title>Middletown Creamery | Home</title>
     <!--load all styles -->
     <link href="stylesheets/css/all-7b6297f9.css" rel="stylesheet"> 
-    <link href="stylesheets/site-09b217f1.css" rel="stylesheet" />
+    <link href="stylesheets/site-aefa160b.css" rel="stylesheet" />
     <script src="javascripts/site-954757c2.js"></script>
   </head>
   <body>
     <main>
       <nav>
 	<div id="container">
-		<div class="site_nav">
-			<h1><a href="./">Middletown Creamery</a></h1>
-		</div>
-		<div class="social_nav">
-			<a href="about.html">About Us</a>
-			<a href="menu.html">Menu</a>
-			<a href="#"><i class="fab fa-facebook-f"></i></a>
-			<a href="#"><i class="fab fa-instagram"></i></a>
+		<div class="site_nav_wrapper">
+			<div class="site_nav">
+				<h1><a href="./">Middletown Creamery</a></h1>
+			</div>
+			<div class="social_nav">
+				<a href="about.html">About Us</a>
+				<a href="menu.html">Menu</a>
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+			</div>
 		</div>
 	</div>
 </nav>
@@ -72,13 +74,13 @@
         Hours
       </h1>
       <p>
-        Monday: 11:30 AM - 4:00 PM <br>
-        Tuesday: 11:30 AM - 4:00 PM <br>
-        Wednesday: 11:30 AM - 4:00 PM <br>
-        Thursday: 11:30 AM - 4:00 PM <br>
-        Friday: 11:30 AM - 4:00 PM <br>
-        Saturday: 12:00 PM - 4:00 PM <br>
-        Sunday: CLOSED
+        M: 11:30 AM - 4:00 PM <br>
+        T: 11:30 AM - 4:00 PM <br>
+        W: 11:30 AM - 4:00 PM <br>
+        T: 11:30 AM - 4:00 PM <br>
+        F: 11:30 AM - 4:00 PM <br>
+        S: 12:00 PM - 4:00 PM <br>
+        S: CLOSED
       </p>
     </section>
   </div>
@@ -87,36 +89,38 @@
 
 
 
-      <footer>
-
-  <div id="container" class="footer_info">
-    
-    <div class="social_footer">
-      <h3>Join the community</h3>
-      <a href="#">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="#">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="#">
-        <i class="fab fa-patreon"></i>
-      </a>
-    </div>
-
-    <div class="footer_contact">
+      
+<!--  Footer social -->
+<footer>
+  <div id="container">
+       <!-- Footer Contact -->
+     <section class="footer_contact">
       <h3>Contact Us</h3>
-      <p>Phone: 52-343-56-6</p>
-      <p>Email: middletowncreamery@gmail.com</p>
-    </div>
+      <ul class="ft_contact_list">
+        <li><a href="#">Phone: 52-343-56-6</a></li>
+        <li><a href="#">Email: middletowncreamery@gmail.com</a></li>
+      </ul>
+    </section>
 
-    <div class="footer_location">
+    <section class="social_footer">
+      <h3>Join the community</h3>
+      <ul class="social_list">
+        <li><a href="#"><i class="fab fa-facebook-f  fa-2x"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram  fa-2x"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook  fa-2x"></i></a></li>
+      </ul>
+    </section>
+
+    <!-- Footer Location -->
+    <section class="footer_location">
       <h3>Location</h3>
-      <p>21037 Calistoga St Middletown, California 95461</p>
-    </div>
-
-  </div><!-- End of footer_info -->
-
+      <ul class="ft_location_list">
+        
+        <li><a href="#">21037 Calistoga St Middletown, California 95461</a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </section>
+  </div>
 </footer>
     </main>
   </body>
