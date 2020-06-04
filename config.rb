@@ -42,6 +42,16 @@ import_path File.expand_path('bower_components', app.root)
 activate :syntax
 set :markdown_engine, :kramdown
 
+configure :development do
+	# set :images_dir, 'source/images'
+	# set :js_dir, 'source/javascripts'
+	# set :css_dir, 'assets/stylesheets'
+
+
+	# set :fonts_dir, 'source/fonts'
+	# set :site_url, 'middletown_creamery'
+end
+
 configure :build do
 	set :relative_links, true
 	activate :minify_css
@@ -52,7 +62,7 @@ configure :build do
 	# Relative assets needed to deploy to Github Pages
 	activate :relative_assets
 	# Name of the project where you working on
-	set :site_url, "/middletown_creamery"
+	set :site_url, "middletown_creamery"
 end
 # Helpers
 # Methods defined in the helpers block are available in templates
@@ -67,7 +77,3 @@ end
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
