@@ -45,6 +45,11 @@ $screen-md-max: ($screen-lg-min - 1);
 //-------------------------------------------------------------
 // Navigation Styles
 //-------------------------------------------------------------
+@media only screen and (max-width: 600px) {
+  .site_nav_wrapper {
+
+  }
+}
 .site_nav {
   display: inline-block;
 }
@@ -125,6 +130,7 @@ $screen-md-max: ($screen-lg-min - 1);
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding: 5px;
 }
 //-------------------------------------------------------------
 // Section info panel
