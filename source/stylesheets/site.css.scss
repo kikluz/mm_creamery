@@ -57,7 +57,7 @@ $screen-md-max: ($screen-lg-min - 1);
 }
 .site_nav {
   // this is for mobile
-   @media (max-width: 700px) {
+  @media (max-width: 700px) {
     font-size: 1em;
     padding-top: 6px;
     text-align: center;
@@ -66,7 +66,7 @@ $screen-md-max: ($screen-lg-min - 1);
 }
 .social_nav {
   // this is for mobile
-   @media (max-width: 700px) {
+  @media (max-width: 700px) {
     display: block;
     float: none;
   }
@@ -103,10 +103,10 @@ $screen-md-max: ($screen-lg-min - 1);
   // Background style
   // this is for mobile
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/creamerie_mm.jpeg);
-   @media (max-width: 700px) {
-    width: 700px;
-    height: auto;
-  }
+  // @media (max-width: 700px) {
+  //   width: 700px;
+  //   height: auto;
+  // }
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -162,6 +162,10 @@ $screen-md-max: ($screen-lg-min - 1);
 // Section info panel
 //-------------------------------------------------------------
 .info_panel {
+  // this is for mobile
+  @media (max-width: 700px) {
+    padding: 20px; 
+  }
   padding: 100px;
 }
 //-------------------------------------------------------------
@@ -187,6 +191,11 @@ $screen-md-max: ($screen-lg-min - 1);
 }
 .fa-ice-cream {color: #C879B2;}
 .col1, .col2, .col3 {
+  // this is for mobile
+  @media (max-width: 700px) {
+    float: none;
+    width: auto;
+  }
   float: left;
   width: 33.33%;
 
@@ -226,6 +235,11 @@ footer {
 }
 
 .social_footer, .footer_contact, .footer_location {
+  // this is for mobile
+  @media (max-width: 700px) {
+    float: none;
+    width: auto;
+  }
   float: left;
   width: 33.33%;
   margin: 0 auto;
