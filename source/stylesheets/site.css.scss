@@ -22,9 +22,10 @@ p {
   font-size: 1.25rem;
   font-family: 'Asap', sans-serif;
 }
-// --------------------------------------------------
-// Breakpoints
-// --------------------------------------------------
+//-------------------------------------------------------------
+// Media queries
+//-------------------------------------------------------------
+
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 // Defining values
 $screen-sm-min: 768px;
@@ -43,18 +44,32 @@ $screen-md-max: ($screen-lg-min - 1);
 // @media (max-width: $screen-md-max) { ... }
 // @media (min-width: $screen-lg-min) { ... }
 
+
 //-------------------------------------------------------------
 // Navigation Styles
 //-------------------------------------------------------------
-@media only screen and (max-width: 600px) {
-  .site_nav_wrapper {
 
+.site_nav_wrapper{
+  // this is for mobile
+  @media (max-width: 700px) {
+    text-align: center;
   }
 }
 .site_nav {
+  // this is for mobile
+   @media (max-width: 700px) {
+    font-size: 1em;
+    padding-top: 6px;
+    text-align: center;
+  }
   display: inline-block;
 }
 .social_nav {
+  // this is for mobile
+   @media (max-width: 700px) {
+    display: block;
+    float: none;
+  }
   display: inline;
   float: right;
   margin-block-start: 0.83em;
