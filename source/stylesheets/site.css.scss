@@ -85,11 +85,6 @@ $screen-md-max: ($screen-lg-min - 1);
 /*vw and vh stand for the percentage of the viewport width and height.*/
 .hero {
   // Sizing
-img {
-  @media (max-width: 700px) {
-    max-width: 300px;
-  }
-}
   width: 100vw;
   height: 100vh;
   // he horizontal scroll solved by giving max-width: 100%
@@ -108,6 +103,10 @@ img {
   // Background style
   // this is for mobile
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/creamerie_mm.jpeg);
+   @media (max-width: 700px) {
+    width: 700px;
+    height: auto;
+  }
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
