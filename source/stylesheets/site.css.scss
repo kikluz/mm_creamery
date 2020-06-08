@@ -104,6 +104,7 @@ $screen-md-max: ($screen-lg-min - 1);
   // this is for mobile
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/creamerie_mm.jpeg);
     @media (max-width: 700px) {
+      background-size: 50% auto;
       // Scaling to the Maximum Size
       background-size: contain;
       // Filling the Background
