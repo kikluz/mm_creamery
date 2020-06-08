@@ -82,7 +82,7 @@ $screen-md-max: ($screen-lg-min - 1);
 // --------------------------------------------------
 // Hero positioning and sizing   
 // --------------------------------------------------
-// testing hero image
+// testing hero image https://www.developerdrive.com/full-page-hero-image-html-css/
 .hero_1 {
     position: relative;
     width: 100vw;
@@ -99,7 +99,6 @@ $screen-md-max: ($screen-lg-min - 1);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    filter: brightness(60%);
 }
 .hero-content {
     position: relative;
@@ -120,75 +119,32 @@ $screen-md-max: ($screen-lg-min - 1);
     margin: 0.625rem;
 }
 .hero-title {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 0;
-}
-.hero-subtitle {
-    font-size: 2rem;
-    font-weight: 200;
-    margin-top: 1rem;
-}
-.hero-button {
-    background-color: #ae2d59;
-    color: white;
-    border: 1px solid #cb376a;
-    margin-top: 5rem;
-    padding: 0.9375rem 1.875rem;
-    font-family: "Monserrat", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 200;
-    cursor: pointer;
-}
-.hero-button:hover {
-    background-color: #cb376a;
-    border: 1px solid #db7598;
-}
-//-----------------------------------------
-/*vw and vh stand for the percentage of the viewport width and height.*/
-.hero {
-  // Sizing
-  width: 100vw;
-  height: 100vh;
-  // he horizontal scroll solved by giving max-width: 100%
-  max-width:100%;
-  // flex-direction: column;
-
-  // Flexbox stuff
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  // Text styles 
-  text-align: center;
-  color: white; /* ADD THIS LINE */
-
-  // Background style
   // this is for mobile
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/creamerie_mm.jpeg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  h1 {
-    // this is for mobile
     @media (max-width: 700px) {
       font-size: 2.5em;
     }
-
-    // Text styles
+   // Text styles
     font-size: 5em;
     /* Margins */
     margin-top: 0;
     margin-bottom: 0.5em;
-  }
-  p {
+  
+    // font-size: 3rem;
+    font-weight: 600;
+}
+.hero-subtitle {
     font-size: 1.25rem;
     font-weight: 300;
     font-family: 'Asap', sans-serif;
-  }
-  .btn {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.btn {
     // Positioning and sizing
     display: block;
     width: 200px;
@@ -209,8 +165,76 @@ $screen-md-max: ($screen-lg-min - 1);
     border: 3px solid white;
     border-radius: 8px;
   }
-}
 
+//-----------------------------------------
+/*vw and vh stand for the percentage of the viewport width and height.*/
+// .hero {
+//   // Sizing
+//   width: 100vw;
+//   height: 100vh;
+//   // he horizontal scroll solved by giving max-width: 100%
+//   max-width:100%;
+//   // flex-direction: column;
+
+//   // Flexbox stuff
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   // Text styles 
+//   text-align: center;
+//   color: white; /* ADD THIS LINE */
+
+//   // Background style
+//   // this is for mobile
+//   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/creamerie_mm.jpeg);
+//   background-size: cover;
+//   background-position: center center;
+//   background-repeat: no-repeat;
+//   background-attachment: fixed;
+
+//   h1 {
+//     // this is for mobile
+//     @media (max-width: 700px) {
+//       font-size: 2.5em;
+//     }
+
+//     // Text styles
+//     font-size: 5em;
+//     /* Margins */
+//     margin-top: 0;
+//     margin-bottom: 0.5em;
+//   }
+//   p {
+//     font-size: 1.25rem;
+//     font-weight: 300;
+//     font-family: 'Asap', sans-serif;
+//   }
+//   .btn {
+//     // Positioning and sizing
+//     display: block;
+//     width: 200px;
+
+//     // padding and marging
+//     padding: 1em;
+//     margin-top: 50px;
+//     margin-right: auto;
+//     margin-left: auto;
+
+//     // Text styles
+//     color: white; /* CHANGE THIS LINE */
+//     text-decoration: none;
+//     font-size: 1.5em;
+//     background-color: rgba(98, 222, 127, 0.7);
+
+//     // Border styles
+//     border: 3px solid white;
+//     border-radius: 8px;
+//   }
+// }
+//-------------------------------------------------------------
+// Main container
+//-------------------------------------------------------------
 #container {
   max-width: 1200px;
   margin-left: auto;
