@@ -87,6 +87,8 @@ $screen-md-max: ($screen-lg-min - 1);
     position: relative;
     width: 100vw;
     height: 100vh;
+    // he horizontal scroll solved by giving max-width: 100%
+    max-width:100%;
 }
 .hero_1::before {
     content: "";
@@ -301,6 +303,15 @@ $screen-md-max: ($screen-lg-min - 1);
     color: #e20000;
   }
 }
+.col_hours {
+  @media (max-width: 700px) {
+    text-align: left;
+    padding-left: 1em;
+  }
+  display: inline-block;
+  text-align: left;
+  
+}
 //-------------------------------------------------------------
 // Footer Styles
 //-------------------------------------------------------------
@@ -331,7 +342,7 @@ footer {
 .social_list {
   li { 
     display: inline;
-    padding-right: 2em; 
+    padding-right: 1em; 
   }
 }
 
