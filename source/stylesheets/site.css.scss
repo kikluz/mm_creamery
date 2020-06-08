@@ -103,10 +103,12 @@ $screen-md-max: ($screen-lg-min - 1);
   // Background style
   // this is for mobile
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/creamerie_mm.jpeg);
-  // @media (max-width: 700px) {
-  //   width: 700px;
-  //   height: auto;
-  // }
+    @media (max-width: 700px) {
+      // Scaling to the Maximum Size
+      background-size: contain;
+      // Filling the Background
+      background-size: cover;
+    }
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
