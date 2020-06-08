@@ -82,21 +82,69 @@ $screen-md-max: ($screen-lg-min - 1);
 // --------------------------------------------------
 // Hero positioning and sizing   
 // --------------------------------------------------
-div.column {
-    max-width: 100%;
-    margin: 50px auto;
+// testing hero image
+.hero_1 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
 }
-figure.fixedratio {
-    padding-top: 56.25%;
-    display: block;
-    margin: 0;
-    background-color: #eee;
-    background-image: url(../images/creamerie_mm.jpeg);
+.hero_1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/creamerie_mm.jpeg);
+    background-repeat: no-repeat;
     background-size: cover;
-    -moz-background-size: cover;
-    background-position: center;
-    border: 1px solid #999;
+    background-position: center center;
+    filter: brightness(60%);
 }
+.hero-content {
+    position: relative;
+}
+.hero_1 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content {
+    position: relative; 
+    font-family: "Monserrat", sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0.625rem;
+}
+.hero-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.hero-subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+.hero-button {
+    background-color: #ae2d59;
+    color: white;
+    border: 1px solid #cb376a;
+    margin-top: 5rem;
+    padding: 0.9375rem 1.875rem;
+    font-family: "Monserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+.hero-button:hover {
+    background-color: #cb376a;
+    border: 1px solid #db7598;
+}
+//-----------------------------------------
 /*vw and vh stand for the percentage of the viewport width and height.*/
 .hero {
   // Sizing
