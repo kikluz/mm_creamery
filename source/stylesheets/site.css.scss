@@ -82,6 +82,21 @@ $screen-md-max: ($screen-lg-min - 1);
 // --------------------------------------------------
 // Hero positioning and sizing   
 // --------------------------------------------------
+div.column {
+    max-width: 100%;
+    margin: 50px auto;
+}
+figure.fixedratio {
+    padding-top: 56.25%;
+    display: block;
+    margin: 0;
+    background-color: #eee;
+    background-image: url(../images/creamerie_mm.jpeg);
+    background-size: cover;
+    -moz-background-size: cover;
+    background-position: center;
+    border: 1px solid #999;
+}
 /*vw and vh stand for the percentage of the viewport width and height.*/
 .hero {
   // Sizing
@@ -103,13 +118,6 @@ $screen-md-max: ($screen-lg-min - 1);
   // Background style
   // this is for mobile
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/creamerie_mm.jpeg);
-    @media (max-width: 700px) {
-      background-size: 50% auto;
-      // Scaling to the Maximum Size
-      background-size: contain;
-      // Filling the Background
-      background-size: cover;
-    }
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
