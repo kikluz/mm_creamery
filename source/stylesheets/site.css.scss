@@ -241,7 +241,7 @@ $screen-md-max: ($screen-lg-min - 1);
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 5px;
+  padding: 2em;
 }
 //-------------------------------------------------------------
 // Section info panel
@@ -391,4 +391,15 @@ footer {
     font-weight: 600;
   }
 
+}
+//-------------------------------------------------------------
+// About page
+//-------------------------------------------------------------
+.about_img {
+  img {
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+
+  }
 }
