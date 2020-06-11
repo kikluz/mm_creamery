@@ -23,7 +23,7 @@ title: Middletown Creamery | Home
             Ice Cream Shop · Sandwich Shop · Candy Store
        </h2>
          
-       <p> <a href="#" class="btn">Call Now</a></p>
+       <p> <a href="tel:52343566" class="btn">Call Now</a></p>
     
     </div>
 
@@ -57,7 +57,11 @@ title: Middletown Creamery | Home
       <h1>
         <h1>Menu</h1> 
         <br>
-        <a href="#"><i class="fas fa-ice-cream fa-5x"></i></a>
+        <% link_to '/menu.html' do %>
+         <i class="fas fa-ice-cream fa-5x"></i>
+        <% end %>
+        
+          
       </h1>
     </section>
     <section class="col3">
