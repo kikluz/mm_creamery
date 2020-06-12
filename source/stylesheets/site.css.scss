@@ -19,7 +19,7 @@ a {
   }
 }
 p {
-  font-size: 1.25rem;
+  font-size: 1.2em;
   font-family: 'Asap', sans-serif;
 }
 
@@ -214,7 +214,7 @@ $screen-md-max: ($screen-lg-min - 1);
 .fa-ice-cream {color: #C879B2;}
 .col1, .col2, .col3 {
   // this is for mobile
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     float: none;
     width: auto;
   }
